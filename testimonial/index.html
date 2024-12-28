@@ -15,24 +15,30 @@
   </head>
   <body>
     <main>
-      <article class="testimonial-card">
-        <div class="testimonial-card__author-info">
+      <article
+        class="testimonial"
+        itemscope
+        itemtype="https://schema.org/Review"
+      >
+        <div
+          class="testimonial__author-info"
+          itemscope
+          itemtype="https://schema.org/Person"
+        >
           <img
             src="img/profile-thumbnail.png"
-            alt="User"
+            alt="Avatar of Sarah Dole"
             loading="eager"
-            class="testimonial-card__avatar"
+            height="48"
+            width="48"
+            class="testimonial__avatar"
           />
-          <div class="testimonial-card__socials">
-            <span class="testimonial-card__name"
-              >Sarah Dole</span
-            >
-            <span class="testimonial-card__handle"
-              >@sarahdole</span
-            >
+          <div class="testimonial__socials">
+            <span class="testimonial__name" itemprop="author">Sarah Dole</span>
+            <span class="testimonial__handle">@sarahdole</span>
           </div>
         </div>
-        <p class="testimonial-card__statement">
+        <p class="testimonial__statement" itemprop="reviewBody">
           I've been searching for high-quality abstract images for my design
           projects, and I'm thrilled to have found this platform. The variety
           and depth of creativity are astounding!
