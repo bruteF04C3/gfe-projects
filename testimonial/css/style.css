@@ -60,6 +60,10 @@ body {
   font-size: 18px;
   font-weight: var(--semibold);
   color: #171717;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
 }
 
 .testimonial-card__handle {
@@ -68,6 +72,13 @@ body {
 
 .testimonial-card__statement {
   font-size: 16px;
+  display: -webkit-box;
+  line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
 }
 
 
