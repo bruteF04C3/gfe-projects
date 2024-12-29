@@ -1,0 +1,101 @@
+:root {
+  --white: #FFFFFF;
+  --margin-top: 200px;
+  --regular: 400;
+  --semibold: 600;
+  --text-primary: #525252;
+  --padding-primary: 24px;
+}
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #F9FAFB, #D2D6DB);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: var(--padding-primary); 
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Following BEM convention to foster reusability */
+.testimonial-card {
+  max-width: 340px;
+  margin: 0 auto;
+  padding: var(--padding-primary);
+  background-color: var(--white);
+  margin-top: var(--margin-top);
+  border-radius: 8px;
+  font-weight: var(--regular);
+  color: var(--text-primary);
+  box-shadow: 0 1 3 0 rgba(0, 0, 0, 0.1) 0 1 2 -1 rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card__author-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.testimonial-card__avatar {
+  border-radius: 50%;
+}
+
+.testimonial-card__socials {
+  margin-left: 16px;
+}
+
+.testimonial-card__name {
+  display: block;
+  font-size: 18px;
+  font-weight: var(--semibold);
+  color: #171717;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+.testimonial-card__handle {
+  font-size: 14px; 
+}
+
+.testimonial-card__statement {
+  font-size: 16px;
+  display: -webkit-box;
+  line-clamp: 5;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+
+
+.credits {
+  color: #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 11px;
+}
+
+.credits a {
+  color: #000;
+  font-weight: bold;
+}
+
+.credit-link {
+  margin-left: 4px;
+}
+
