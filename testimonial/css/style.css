@@ -29,7 +29,7 @@ body {
 }
 
 /* Following BEM convention to foster reusability */
-.testimonial {
+.testimonial-card {
   max-width: 340px;
   margin: 0 auto;
   padding: var(--padding-primary);
@@ -38,34 +38,35 @@ body {
   border-radius: 8px;
   font-weight: var(--regular);
   color: var(--text-primary);
+  box-shadow: 0 1 3 0 rgba(0, 0, 0, 0.1) 0 1 2 -1 rgba(0, 0, 0, 0.1);
 }
 
-.testimonial__author-info {
+.testimonial-card__author-info {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.testimonial__avatar {
+.testimonial-card__avatar {
   border-radius: 50%;
 }
 
-.testimonial__socials {
+.testimonial-card__socials {
   margin-left: 16px;
 }
 
-.testimonial__name {
+.testimonial-card__name {
   display: block;
   font-size: 18px;
   font-weight: var(--semibold);
   color: #171717;
 }
 
-.testimonial__handle {
+.testimonial-card__handle {
   font-size: 14px; 
 }
 
-.testimonial__statement {
+.testimonial-card__statement {
   font-size: 16px;
 }
 
